@@ -6,25 +6,41 @@
      </head>
      <body>
 	<h1> Welcome, Guinhas! </h1>
-	<ul data-category="1">
-		<li data-shortcute="1">/general</li> 
-		<li><a href="https://google.com">google</li>
-		<li><a href="https://youtube.com">youtube</li>
-		<li><a href="https://monkeytype.com">monkeytpe</li>
-		<li><a href="https://gmail.com">gmail</li>
-	</ul>
-	<ul data-category="2">
-		<li data-shortcute="2">/uni</li>
-		<li><a href="https://outlook.office365.com">outlook</li>
-		<li><a href="https://moodle2526.up.pt/">moodle</li>
-		<li><a href="https://sigarra.up.pt/feup/pt/cur_geral.cur_inicio">sigarra</li>
-		<li><a href="https://gitlab.up.pt">gitlab</li>
-	</ul>
-	<ul data-category="3">
-		<li data-shortcute="3">/dev</li> 
-		<li><a href="https://outlook.office365.com"> outlook</li>
-		<li><a href="https://moodle2526.up.pt/"> moodle</li>
-		<li><a href="https://sigarra.up.pt/feup/pt/web_page.inicial"> sigarra</li>
-		<li><a href="https://reddit.com"> reddit </li>
-	</ul>
+
+	<div class="search-container">
+		<img class="search-icon" src=assets/search-solid.svg style="height:15px">
+	        <input id="search" autocomplete="on" placeholder="What are you looking for?">
+	</div>
+
+	<div id="links">
+	   <div class="urls">
+	      <div class="header">/general</div>
+	        <ul>
+		    <li><a href="https://youtube.com">youtube</a></li>
+	            <li><a href="https://monkeytype.com">monkeytpe</a></li>
+	            <li><a href="https://gmail.com">gmail</a></li>
+	            <li><a href="https://reddit.com">reddit</a></li>
+		</ul>
+	     </div>
+
+	   <div class="urls">
+	      <div class="header">/uni</div>
+	        <ul>
+		    <li><a href="https://outlook.office365.com">outlook</a></li>
+		    <li><a href="https://moodle2526.up.pt/">moodle</a></li>
+		    <li><a href="https://sigarra.up.pt/feup/pt/cur_geral.cur_inicio">sigarra</a></li>
+		    <li><a href="https://gitlab.up.pt">gitlab</a></li>
+		</ul>
+	     </div>
+
+
+	   <div class="urls">
+	      <div class="header">/dev</div>
+	        <ul>
+		    <li><a href="https://github.com">github</a></li>
+		    <li><a href="https://archlinux.org/packages/">arch packages</a></li>
+		    <li><a href="https://www.w3schools.com/">w3schools</a></li>
+		</ul>
+	     </div>
+	</div>
      </body>
