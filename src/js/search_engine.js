@@ -1,18 +1,33 @@
 let activeEngine = "https://duckduckgo.com/?t=ffab&q=";
 const providers = document.querySelectorAll(".provider");
+const sel_provider = document.getElementById("selected_provider");
+
+function set_selected_provider(name){
+	if(sel_provider) sel_provider.innerHTML = name;
+}
+
 
 providers.forEach(p => {
 	p.addEventListener("click", () => {
 		activeEngine = p.dataset.engine;
+		set_selected_provider(p.innerText.split('Alt')[0].trim());
 	});
 });
 
 document.addEventListener("keydown", (e) => {
 	if (e.altKey){
-		if (e.key === "a") activeEngine = providers[0].dataset.engine;
-		if (e.key === "c") activeEngine = providers[1].dataset.engine;
-		if (e.key === "y") activeEngine = providers[2].dataset.engine;
-		if (e.key === "i") activeEngine = providers[3].dataset.engine;
+		if (e.key === "a") {
+			activeEngine = providers[0].dataset.engine; 
+			set_selected_provider("duckduckgo"); 
+		}
+		if (e.key === "y") {
+			activeEngine = providers[1].dataset.engine; 
+			set_selected_provider("youtube");
+		}
+		if (e.key === "i") {
+			activeEngine = providers[2].dataset.engine; 
+			set_selected_provider("reddit");
+		}
 	}
 });
 
