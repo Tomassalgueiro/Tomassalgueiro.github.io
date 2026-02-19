@@ -1,0 +1,15 @@
+
+//Change default varaibles here (before import)
+$font-family-sans-serif: "Space Mono", monospace;
+
+//Import
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+//Then add aditional custom code here
+* {
+        font-family: "Space Mono";
+}
+
+body {
+
+}
