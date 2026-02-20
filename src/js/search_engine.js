@@ -1,9 +1,9 @@
 let activeEngine = "https://duckduckgo.com/?t=ffab&q=";
 const providers = document.querySelectorAll(".provider");
-const sel_provider = document.getElementById("selected_provider");
+const sel_provider = document.getElementById("search");
 
 function set_selected_provider(name){
-	if(sel_provider) sel_provider.innerHTML = name;
+	if(sel_provider) sel_provider.placeholder = `Search on ${name}`;
 }
 
 
