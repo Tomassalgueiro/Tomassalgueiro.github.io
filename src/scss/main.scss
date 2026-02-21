@@ -22,16 +22,16 @@ a {
   text-decoration: none;
 }
 
-li {
-   list-style:none;
-}
 
 #date {
+  font-family: "Montserrat";
   margin-top: 5%;
+  font-weight: 700;
 }
 
 h2 {
-  margin-top: 9%
+  margin-top: 17%;
+  font-family: "Montserrat";
 }
 
 
@@ -41,9 +41,10 @@ h2 {
         border-radius: 12px;
         display: flex;
         align-items: center;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         max-width: 100%;
         width: 100%;
+        margin-top: 3%;
 }
 
 .search-container input {
@@ -62,8 +63,46 @@ h2 {
 }
 
 .provider img {
-//      width: 20px;
-//      height: 20px;
+        width: 20px;
+        height: 20px;
         border-radius: 50%;
-        margin-top: 3px;
-    }
+}
+
+.provider{
+        background: #2b2a32;
+        padding: 7px 10px;
+        margin: 0 5px; 
+        border-radius: 12px;
+}
+
+.provider span {
+        font-size: 0.75rem;
+        color: #a3a3a3;
+}
+
+.header {
+  font-size: 2.5rem;
+  margin-top: 40%;
+  color: #4b7544; 
+}
+
+ul {
+  margin-top: 20px;
+}
+
+li {
+   list-style:none;
+}
+
+#links a {
+  font-size: 1.3rem;
+  color: #e5e5e5;  
+  opacity: 0.54;
+}
+
+#links a:hover {
+  font-style: italic;
+  color: #a5ff9a;
+}
+
+

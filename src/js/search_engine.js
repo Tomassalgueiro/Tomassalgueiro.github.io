@@ -18,15 +18,15 @@ document.addEventListener("keydown", (e) => {
 	if (e.altKey){
 		if (e.key === "a") {
 			activeEngine = providers[0].dataset.engine; 
-			set_selected_provider("duckduckgo"); 
+			set_selected_provider("DuckDuckGo"); 
 		}
 		if (e.key === "y") {
 			activeEngine = providers[1].dataset.engine; 
-			set_selected_provider("youtube");
+			set_selected_provider("Youtube");
 		}
 		if (e.key === "i") {
 			activeEngine = providers[2].dataset.engine; 
-			set_selected_provider("reddit");
+			set_selected_provider("Reddit");
 		}
 	}
 });
